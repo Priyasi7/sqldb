@@ -1,0 +1,77 @@
+/* styles.css */
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2); /* Gradient background */
+    font-family: Arial, sans-serif;
+    color: #fff; /* Text color */
+}
+
+.container {
+    max-width: 800px; /* Set maximum width for content */
+    margin: auto; /* Center content horizontally */
+    padding: 20px; /* Add padding around content */
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.title {
+    font-size: 48px; /* Larger title font size */
+    font-weight: bold; /* Bold title text */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for depth */
+}
+
+.query-input {
+    width: 100%;
+    padding: 12px;
+    border: none; /* Remove border */
+    border-radius: 30px; /* Round input corners */
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white background */
+    color: #333; /* Input text color */
+    font-size: 18px; /* Input text size */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Box shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.query-input:focus {
+    background-color: rgba(255, 255, 255, 0.8); /* Lighter background on focus */
+}
+
+.answer-header {
+    font-size: 32px; /* Larger header font size */
+    font-weight: bold; /* Bold header text */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for depth */
+}
+
+.answer {
+    font-size: 24px; /* Larger answer font size */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5); /* Text shadow for depth */
+}
+
+/* Add animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+.slideInFromLeft {
+    animation-name: slideInFromLeft;
+}
